@@ -52,6 +52,9 @@ write				{reservedSymbol++;printf("Reserved\t\t\t%s\n",yytext);}
   /* Expresions for blank spaces in the files*/
 \n
 \t
+\r
+\v
+\f
 " "
   /* Last rule that indicates no other rule was met and thus the token is an error */
 . 											{errorSymbol++;printf("Error\t\t\t\t%s\n",yytext);}
